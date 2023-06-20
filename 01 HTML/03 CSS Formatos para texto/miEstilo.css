@@ -1,0 +1,56 @@
+body{
+	color: #27B069;
+	font-family: Verdana,"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "sans-serif";
+	font-size: 65%;
+	background: url("imagenes/fondo_div.png") repeat-x;
+}
+
+#principal h1{
+	color: #f30;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 3em;
+	text-align: center;
+}
+
+
+#principal h2{
+	font: bold 3.5em "times", serif;
+	border-bottom: 2px solid #000000;
+	text-align: center;
+	
+}
+
+#principal h3{
+	color: #FF3300;
+	font-size: 200%;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	text-shadow: -2px -2px 2px #000;
+}
+
+#principal p{
+	font-size: 1.5em;
+	line-height: 150%;;
+	margin-left: 150px;
+	margin-right: 50%;
+	margin-bottom: 10px;
+}
+
+#principal ul{
+	margin: 50px 0px 25px 50px;
+	float: right;
+	width: 160px;
+}
+
+#principal li{
+	color: #1B1165;
+	font-size: 1.2em;
+	margin-bottom: 7px;
+}
+
+#subtitulo1{
+	font-size: 1.5em;
+	margin: 5px 0px 25px 50px;
+}

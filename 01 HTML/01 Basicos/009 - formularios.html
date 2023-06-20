@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- Aquí empieza el body -->
+<body>
+
+        <form name="formulario" id="formulario" method="get" autocomplete="off">
+
+            Email: <input type="email">
+              <input type="submit" value="Aceptar"><br><br>
+            <br>
+            <br>
+            Edad;
+            <input type="number" min="18" max="100" step="10">
+            <input type="submit" value="Aceptar"><br><br>
+            <br>
+            <br>
+            Buscar:
+            <input type="search" name="buscar" id="buscar"><br><br>
+            <br>
+            <br>
+            URL:
+            <input type="url" name="URL" id="URL"><br><br>
+            <br>
+            <br>
+            Rango: <input type="range" min="0" max="100" step="10"><br><br>
+            <br>
+            <br>
+            Fecha:  <input type="date"><br><br>
+            <br>
+            <br>
+            <!-- Esto es un campo obligatorio -->
+            Hora:    <input type="time" name="hora" id="hora" required><br><br>
+            <br>
+            <br>
+            <!-- Esto es un campo obligatorio -->
+            Código postal: <input pattern="[0-9]{5}" required  placeholder="5 dígitos"br><br>
+            <br>
+            <br>
+            Telefono: <input type="tel">
+            <br>
+            <br>
+                        <!-- Esto es un Data list -->
+            <datalist id="informacion">
+                <option value="952773366" label="   Telefono 1"></option>
+                <option value="952734366" label="   Telefono 2"></option>
+                <option value="952773236" label="   Telefono 3"></option>
+            </datalist>
+            Telefono tipo datalist:
+              <input type="tel" name="telefono" id="telefono" list="informacion">
+              <br>
+              <br>
+              <!-- Esto es un Radio button -->
+              <label for="male">Male</label>
+
+              <input type="radio" name="gender" id="male" value="male"><br>
+              <label for="female">Female</label>
+
+              <input type="radio" name="gender" id="female" value="female"><br>
+              <label for="other">Other</label>
+
+              <input type="radio" name="gender" id="other" value="other"><br><br>
+
+            <br>
+            <br>
+              
+              <input type="submit" value="Enviar">
+              <br>
+              <br>
+    </form>
+
+   
+      
+</body>
+</html>

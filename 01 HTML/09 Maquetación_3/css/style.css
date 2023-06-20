@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Lato');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor{
+    background: url(../img/fondo.jpg) no-repeat;
+    background-size: cover;
+    /* Las medidas vh y vw son medidas relativas de acuerdo al viewport. 
+    Vh hace referencia a la centésima parte de la altura del viewport y 
+    vw a la centésima parte del ancho del viewport.*/
+    height: 100vh;
+    
+}
+
+.navbar{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.4);
+}
+
+.navbar .logo{
+    width:180px;
+    height: auto;
+    padding: 20px 100px;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin:0 8px;
+    display:inline-block;
+    line-height: 80px;
+}
+
+.navbar ul li a{
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    color:white;
+    padding: 6px 13px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+h1, h4{
+    font-family: "Lato", sans-serif;
+}
+
+.navbar ul li a.activo,
+.navbar ul li a:hover{
+    background: red;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.contenedor .center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.center h1{
+    color:white;
+    font-size:70px;
+    width: 900px;
+    font-weight: bold;
+    text-align: center;
+}
+.center h4{
+    color:white;
+    font-size:50px;
+    width: 885px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.center .buttons{
+    margin: 35px 280px;
+}
+
+.buttons button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffb3b3;
+    background: red;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid red;
+    border-radius: 25px;
+    transition: .4s;
+}
+
+
+buttons .btn2{
+    margin-left: 25px;
+}
+
+.buttons button:hover{
+    background:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

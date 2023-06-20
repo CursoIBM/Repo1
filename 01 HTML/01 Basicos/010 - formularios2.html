@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="/action_page.php" method="get" enctype="multipart/form-data" accept-charset="UTF-8">
+        <select name="peliculas">
+          <option value="Superman">Superman</option>
+          <option value=" Spiderman " selected> Spiderman</option>
+          <option value="Batman">Batman</option>
+        </select>
+    </form>
+      
+    <br>
+    <br>
+    
+    <form action="/action_page.php" method="get" enctype="multipart/form-data" accept-charset="UTF-8">
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars" size="3">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+        
+        <br>
+        <br>
+        <textarea name="message" rows="10" cols="30">
+            The cat was playing in the garden.
+        </textarea>
+        <br>
+        <br>
+        Puestos de trabajo buscados <br/>
+        <input name="puesto_directivo" type="checkbox" value="direccion"/> Dirección
+        <br>
+        <input name="puesto_tecnico" type="checkbox" checked="checked"  value="tecnico"/> Técnico
+        <br>
+        <input name="puesto_empleado" type="checkbox" value="empleado"/> Empleado
+        <br>
+        <br>
+        Sexo <br/>
+        <input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre
+        <input type="radio" name="sexo" value="mujer" /> Mujer
+        <br>
+        <br>
+        <input type="submit" name="enviar" value="enviar" />
+        
+        <input type="reset" value="Reset"/>
+        <input type="button" value="ejecutar">
+    </form>
+    <br>
+    <br>
+    <form action="/action_page.php" method="post">
+        <fieldset>
+          <legend>Titulo1:</legend>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+
+        <fieldset>
+            <legend>Titulo2:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+          </fieldset>
+          
+        <input type="hidden" name="url_previa" value="/articulo/primero.html" />
+      </form>
+      
+</body>
+</html>

@@ -1,0 +1,14 @@
+
+
+div {
+    height: 400px;
+    background: -webkit-radial-gradient(#3366ff 0%, #ff9966 100%);
+
+
+}
+
+#contenedor2{
+    height: 400px;
+    background: linear-gradient(to bottom, #45ee1b 0%, #5c23c6 100%);
+}
+

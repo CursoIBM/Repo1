@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+#titulo{
+	text-align: center;
+	font-size: 48px;
+	background-color: coral;
+	background: -webkit-linear-gradient(top, blue, #9DE8F1);
+	background: -ms-linear-gradient(top, blue, #9DE8F1);
+	width: 50%;
+	border-radius: 30px;
+	margin: 40px auto;
+	padding: 15px;
+	color: white;
+	box-shadow: grey 15px 15px 15px;
+	text-shadow: black 2px 2px 2px;
+}
+	
+.imagen{
+	width: 200px;
+	height: 130px;
+	border: 2px solid black;
+	padding: 4px;
+	float: left;
+	margin: 80px 20px;
+	border-radius: 10px;
+	transition: transform 0.5s ease-in-out 1s; 
+	
+}
+#imagen1{
+	margin-left: 100px;
+}
+
+.imagen:hover{
+	transform: scale(1.2);
+}
+p.blue{
+	color:blue; 
+	margin-right:20px; } 

@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+      /* Las cajas llegan hasta el borde */
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: url('../img/fondo.jpg');
+      /* La imagen de fondo se encuadra en la pÃ¡gina */
+    background-size: cover;
+  }
+  
+  .box {
+    width: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px  10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 4%;
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
+    border-radius: 15px;
+    /* box-shadow: 7px 13px 37px black; */
+  }
+  
+  .box-img {
+    width: 50%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 30px;
+}
+  
+  .box h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    margin: 30px 0 20px;
+  }
+  
+  .box h2 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    margin-bottom: 30px
+  }
+  
+  .box p {
+    text-align: justify;
+  }
+  
+  .box ul {
+    margin-top: 20px;
+    list-style: none;
+  }
+
+  .box li{
+      display: inline-block;
+  }
+
+
+  .box ul li a{
+      color: white;
+      font-size: 45px;
+      padding: 10px 15px;
+      display: block;
+  }
+
+  .box ul li a:visited{
+      color: rgb(75, 8, 8);
+      transform: scale(1.2);
+
+
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+}
+  
+  

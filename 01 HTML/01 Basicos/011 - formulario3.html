@@ -1,0 +1,70 @@
+<!doctype html>
+<!--FORMULARIO DE PRUEBA-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulario de prueba</title>
+    </head>
+
+    <body>
+        <section>
+            <!--DEFINIMOS EL FORMULARIO-->
+            <form action="c:/php/insertar_cv.php" method="post" enctype="multipart/form-data" accept-charset="UTF-8">
+                
+                <!--ENUNCIADO DEL FORMULARIO-->
+                <h3>Rellena tu CV</h3>
+                
+                <!--DEFINIMOS LOS CAMPOS A RELLENAR POR EL USUARIO-->
+                Nombre <br />
+                <input type="text" name="nombre" id="nombre" min="1" max="30" />
+                <br />
+                Apellidos <br />
+                <input type="text" name="apellidos" id="apellidos" size="80" maxlength="80" />
+                <br />
+                Contraseña <br />
+                <input type="password" name="password" id="password" maxlength="10" />
+                <br />
+                DNI <br />
+                <input type="text" pattern="(0-9){8},(a-z){1}" placeholder="8 dígitos + 1 letra" />
+                <br />
+                
+                <!--REFERENCIAMOS LOS RADIOBUTTON DONDE INDICAR EL SEXO DEL USUARIO-->
+                Sexo
+                <br />
+                <input type="radio" name="sexo" id="sexo" value="hombre" checked="checked" />
+                Hombre
+                <br />
+                <input type="radio" name="sexo" value="mujer" />
+                Mujer
+                
+                <!--INCLUIMOS UNA OPCIÓN PARA SUBIR EL ARCHIVO DE LA FOTO DEL USUARIO-->
+                <br />
+                <br />
+                Incluir mi foto
+                <input type="file" name="foto" id="foto" value="Elegir" />
+                
+                <!--INCLUIMOS EL CHECKBOX DE SUSCRIPCIÓN AL BOLETÍN DE NOVEDADES, MARCADO POR DEFECTO-->
+                <br />
+                <br />
+                <input name="suscripcion" id="suscripcion" type="checkbox" value="suscripcion" checked="checked" />Suscribirme al boletín de novedades
+                
+                <!--DEFINIMOS UN BOTÓN PARA GUARDAR CAMBIOS-->
+                <br />
+                <br />
+                <input type="button" name="guardar" id="guardar" value="Guardar cambios" />
+                
+                <!--DEFINIMOS UN BOTÓN PARA RESETEAR EL FORMULARIO Y DEJAR SUS CAMPOS EN EL ESTADO ORIGINAL-->
+                <input type="reset" name="reset" id="reset" value="Borrar los datos introducidos" />
+                
+            <!--FIN DEL FORMULARIO-->    
+            </form>
+            
+        <!--FIN DE SECTION-->    
+        </section>
+        
+    <!--FIN DE BODY-->    
+    </body>
+    
+<!--FIN DE LA PÁGINA HTML-->    
+</html>
