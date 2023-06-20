@@ -1,0 +1,26 @@
+<!--
+    Se crea un botón que, al ser clicado, llame a una función, muestre una ventana de alerta 
+    con un mensaje y además lo muestre por la consola del navegador (ver console.log(“texto”)).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="miFuncion()">Haz clic aquí</button>
+
+    <script>
+      function miFuncion() {
+        var mensaje = "Hola, mundo!";
+        alert(mensaje);
+        console.log(mensaje);
+      }
+    </script>
+</body>
+</html>

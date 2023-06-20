@@ -1,0 +1,23 @@
+<!--
+Calcular el palíndromo de un string introducido por prompt
+-->
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Palíndromo</title>
+<script>
+	var frase = prompt("Introduce palabra");
+	const strReversed = frase.split("").reverse().join("");
+	if(strReversed === frase){
+	alert("es palindromo");
+	}else{
+	alert("no es palindromo");
+	}
+</script>
+</head>
+<body>
+</body>
+</html>

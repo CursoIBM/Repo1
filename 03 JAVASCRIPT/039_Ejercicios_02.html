@@ -1,0 +1,31 @@
+<!--
+Se crea un elemento con texto en su interior y un botón con la capacidad de llamar a una función, 
+se debe mostrar el contenido (si el texto está oculto) y ocultar el contenido
+ (si el texto se está mostrando) de este elemento.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button onclick="mostrarOcultar()">Mostrar/Ocultar</button>
+  <p id="miTexto">Este es el contenido que quiero mostrar u ocultar</p>
+
+  <script>
+    function mostrarOcultar() {
+      var miTexto = document.getElementById("miTexto");
+      if (miTexto.style.display === "none") {
+        miTexto.style.display = "block";
+      } else {
+        miTexto.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

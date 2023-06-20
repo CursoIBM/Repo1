@@ -1,0 +1,47 @@
+<!--
+Contar las palabras y las letras de un texto
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contra palabras y caracteres</title>
+    <script>
+        function cuenta() {
+
+            textoArea = document.getElementById("parrafo");
+
+            var textoAreaValue = textoArea.innerHTML;
+
+
+            numeroCaracteres = textoAreaValue.length;
+
+            textoAreaDividido = textoAreaValue.split(" ");
+            numeroPalabras = textoAreaDividido.length;
+
+            alert("El texto tiene " + numeroCaracteres + " caracteres y " + numeroPalabras + " palabras.");
+        }
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <p id="parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio maiores alias
+            exercitationem labore. Sapiente repellendus officiis delectus impedit omnis corporis ut,
+            voluptas nisi. Distinctio iure voluptatum provident numquam illum nihil, saepe deleniti
+            voluptas fugiat sunt cumque reiciendis, qui vero inventore deserunt repudiandae laudantium
+            obcaecati? Illo expedita, voluptatem tempore id excepturi in ipsam deleniti optio? Nulla
+            eos quasi libero ipsum veniam alias sit, cumque doloremque vel atque, ex quibusdam
+            voluptatibus accusantium rem tempore quisquam fugiat dolores tenetur, voluptatum quam
+            qui reprehenderit nam at vitae? Mollitia enim quasi temporibus repudiandae culpa alias
+            id itaque facere, deserunt incidunt aliquid similique aspernatur fugit minus?</p>
+    </div>
+
+    <script>cuenta()</script>
+
+</html>

@@ -1,0 +1,35 @@
+<!--
+Crear script que calcule la media de los valores de un array.
+-->
+
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nombre y apellidos</title>
+</head>
+
+<body>
+<form action="">
+  <input type="text" id="nombre" placeholder="Introduce nombre">
+  <br>
+  <br>
+  <input type="text" id="apellidos" placeholder="Introduce apellido">
+  <br>
+  <br>
+  <input type="button" value="Aceptar" onClick="mostrar()">
+</form>
+<hr>
+<div id="salida"></div>
+<script>
+        const sal = document.getElementById("salida");
+        function mostrar() {
+             miNombre = document.getElementById("nombre").value;
+             miApellido = document.getElementById("apellidos").value;
+
+            sal.innerHTML = "Mi nombre es " + miNombre + " y mi apellido es " +miApellido; 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!--
+Comprobar si un mail introducido por prompt contiene la letra @
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <script>
+            function comprobar() {
+                var mail = document.getElementById("mail").value;
+                if (mail.search("@") == -1) {
+                    alert("El mail no contiene el carácter @.");
+                } else { alert("El mail sí contiene el carácter @."); }
+            }
+        </script>
+        <label for="mail">Correo:</label><br>
+        <input type="text" id="mail" name="mail">
+
+
+        <input type="submit" onclick="comprobar();">
+
+    </form>
+</body>
+
+</html>

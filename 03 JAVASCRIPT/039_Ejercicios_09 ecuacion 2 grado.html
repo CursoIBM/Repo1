@@ -1,0 +1,67 @@
+<!--
+Calcular una ecuación de segundo grado
+-->
+
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ejercicio Ecuación 2 Grado</title>
+<style>
+body {
+    width: 100%;
+    text-align: center;
+}
+#form-calc {
+    margin: 100px auto 100px auto;
+}
+#resultado {
+    margin-top: 50px;
+}
+label {
+    display: block;
+}
+input[type="button"] {
+    margin-top: 20px;
+}
+</style>
+<script>
+
+	function pideDatoA(){
+		a = parseInt(prompt("Introduce el valor de A:"));
+	}
+		function pideDatoB(){
+		b = parseInt(prompt("Introduce el valor de B:"));
+	}
+		function pideDatoC(){
+		c = parseInt(prompt("Introduce el valor de C:"));
+	}
+	
+function discrim(a, b, c)
+ {
+ return (b*b - 4*a*c);
+} 
+ function solucionar(a, b, c, sol)
+ {
+ var disc = discrim(a,b,c);
+ if (disc < 0)
+    alert("Sin solución real");
+ else
+    {
+    sol[0] = (-b + Math.sqrt(disc))/(2*a);
+    sol[1] = (-b - Math.sqrt(disc))/(2*a);
+    } 
+}        
+</script>
+</head>
+<body>
+<script>
+	pideDatoA();
+	pideDatoB();
+	pideDatoC();
+ var soluc = new Array(2);
+ solucionar(a,b,c, soluc) ;
+ document.write( "Soluciones "+soluc[0]+" y "+soluc[1]);
+</script>
+</body>
+</html>

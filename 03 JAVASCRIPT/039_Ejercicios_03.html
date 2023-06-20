@@ -1,0 +1,38 @@
+<!--
+Se crean dos elementos de entrada y un botón. El usuario introducirá un número en cada 
+campo de entrada y, al hacer clic en el botón, una función de JavaScript sumará estos 
+dos valores y mostrará el resultado por pantalla.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Suma de dos números</h1>
+  <label for="numero1">Primer número:</label>
+  <input type="number" id="numero1" /><br />
+  <label for="numero2">Segundo número:</label>
+  <input type="number" id="numero2" /><br />
+  <button onclick="sumar()">Sumar</button><br />
+  <div id="resultado"></div>
+  <script>
+    function sumar() {
+      // Obtener los valores de los campos de entrada
+      const numero1 = document.getElementById("numero1").value;
+      const numero2 = document.getElementById("numero2").value;
+
+      // Convertir los valores a números y sumarlos
+      const resultado = Number(numero1) + Number(numero2);
+
+      // Mostrar el resultado en el elemento div
+      document.getElementById("resultado").innerHTML = `El resultado de la suma es: ${resultado}`;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!--
+Crea un script en Javascript que contenga un botón que cambia de color y tamaño de un texto, 
+dependiendo de si el ratón está encima de éste o no, utilizando funciones.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Texto cambia de color y tamaño</h1>
+  <button id="boton" onmouseover="cambiarEstilo(true)" onmouseout="cambiarEstilo(false)">Pasa el ratón por aquí</button><br />
+  <div id="texto">¡Hola, mundo!</div>
+  <script>
+    function cambiarEstilo(encima) {
+      const texto = document.getElementById("texto");
+      const boton = document.getElementById("boton");
+      if (encima) {
+        texto.style.color = "red";
+        texto.style.fontSize = "32px";
+        boton.style.backgroundColor = "gray";
+      } else {
+        texto.style.color = "black";
+        texto.style.fontSize = "24px";
+        boton.style.backgroundColor = "";
+      }
+    }
+  </script>
+</body>
+</html>
+
+<!--
+Este script crea un botón y un texto. Cuando el ratón se mueve sobre el botón, 
+se llama a la función cambiarEstilo(true), que cambia el color y tamaño del texto 
+y el color de fondo del botón. Cuando el ratón sale del botón, se llama a la 
+función cambiarEstilo(false), que devuelve los estilos al valor original.
+
+La función cambiarEstilo() toma un parámetro encima que indica si el ratón está 
+encima del botón o no. Si encima es true, cambia el color y tamaño del texto y 
+el color de fondo del botón a los valores especificados. Si encima es false, 
+devuelve los estilos al valor original
+-->

@@ -1,0 +1,70 @@
+<!--
+Calcular estación del año en función de una dia y mes introducido por prompt-->
+
+
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calcula estación del año</title>
+<script>
+   function enRango(dHoy, mHoy, dIni, mIni, dFin, mFin){
+    bRes = true;
+    bRes = bRes && ((mHoy > mIni) || ((mHoy == mIni) && (dHoy >= dIni)));
+    bRes = bRes && ((mHoy < mFin) || ((mHoy == mFin) && (dHoy <= dFin)));
+    return bRes;
+   }
+
+   function estacion(dia, mes){
+	   
+    if (enRango(dia, mes, 21, 3, 20, 6)) sRes = "Primavera"; else
+    if (enRango(dia, mes, 21, 6, 20, 9)) sRes = "Verano";    else
+    if (enRango(dia, mes, 21, 9, 20, 12)) sRes = "Otoño";    else
+    sRes = "Invierno";
+    return sRes;
+   }
+
+   function calcula(){
+	   
+	var dia = Number(prompt("Introduce día, del 1 al 31"));
+    var mes = Number(prompt("Introduce mes, del 1 al 12;"));
+	var mesTexto="";
+  
+	   if(mes == 1){
+		  mesTexto = "Enero"; 
+	   }else if(mes == 2){
+		   mesTexto ="Febrero";
+	   }else if(mes == 3){
+		   mesTexto ="Marzo";
+	   }else if(mes == 4){
+		   mesTexto ="Abril";
+	   }else if(mes == 5){
+		   mesTexto ="Mayo";
+	   }else if(mes == 6){
+		   mesTexto ="Junio";
+	   }else if(mes == 7){
+		   mesTexto ="Julio";
+	   }else if(mes == 8){
+		   mesTexto ="Agosto";
+	   }else if(mes == 9){
+		   mesTexto ="Septiembre";
+	   }else if(mes == 10){
+		   mesTexto ="Octubre";
+	   }else if(mes == 11){
+		   mesTexto ="Noviembre";
+	   }else {
+		   mesTexto ="Diciembre";
+	   }
+	   
+	  
+	alert( dia + " de " + mesTexto + " está en " + estacion(dia, mes));
+   }
+	  
+	  calcula();
+  </script>
+</head>
+<body>
+</body>
+</html>

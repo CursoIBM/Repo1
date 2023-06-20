@@ -1,0 +1,38 @@
+<!--
+Calcular la letra de un DNI
+https://www.nobbot.com/calcular-la-letra-del-dni/#:~:text=Para%20calcular%20la%20letra%20del,siempre%20entre%200%20y%2022.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ejercicio - Calculo de la letra del DNI</title>
+    <script type="text/javascript">
+        var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+        var numero = prompt("Introduce tu número de DNI (sin la letra)");
+        var letra = prompt("Introduce la letra de tu DNI (en mayúsculas)");
+        letra = letra.toUpperCase();
+
+        if (numero < 0 || numero > 99999999) {
+            alert("El número proporcionado no es válido");
+        }
+        else {
+            var letraCalculada = letras[numero % 23];
+            if (letraCalculada != letra) {
+                alert("La letra o el número proporcionados no son correctos");
+            }
+            else {
+                alert("El número de DNI y su letra son correctos");
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <p>Esta página calcula la letra del DNI</p>
+</body>
+
+</html>

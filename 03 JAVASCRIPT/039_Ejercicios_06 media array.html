@@ -1,0 +1,27 @@
+<!--
+Crear script que calcule la media de los valores de un array.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function ArrayAvg(myArray) {
+        var i = 0, summ = 0, ArrayLen = myArray.length;
+        while (i < ArrayLen) {
+            summ = summ + myArray[i++];
+    }
+        return summ / ArrayLen;
+    }
+    var myArray = [1, 5, 2, 3, 7];
+    var a = ArrayAvg(myArray);
+    alert(a);
+</script>
+</body>
+</html>
