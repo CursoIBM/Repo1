@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        var trabajadores = new Array();
+        var contador = 0;
+        var persona;
+        while (persona != "salir") {
+            persona = prompt("Introduce nombre");
+            trabajadores[contador] = persona;
+            contador++;
+        }
+        trabajadores.pop();
+        for (var i = 0; i < trabajadores.length; i++) {
+            document.write(trabajadores[i] + "<br>");
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

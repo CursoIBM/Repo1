@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        var numero = parseInt(Math.random() * 100);
+        var numero_introducido;
+        var contador = 0;
+        do {
+            numero_introducido = prompt("Introduce número: ");
+            contador++;
+            if (numero_introducido > numero) {
+                alert("Demasiado alto");
+            }
+            if (numero_introducido < numero) {
+                alert("Demasiado bajo");
+            }
+        } while (numero != numero_introducido);
+        alert("CORRECTO¡¡¡, el número era el " + numero + ". Has acertado en " + contador + " intentos.");
+    </script>
+
+
+</body>
+
+</html>

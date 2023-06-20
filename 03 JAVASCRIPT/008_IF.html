@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        var precio = 30000;
+        var dinero = prompt("Introduce cuánto dinero tienes: ");
+        var edad = prompt("Introduce tu edad: ");
+        if ((precio < dinero) && (edad >= 18)) {
+            alert("Te puedes comprar el coche");
+        } else 
+            if ((precio < dinero) && (edad < 18)) {
+                alert("Tienes el dinero pero no la edad");
+            }
+
+            else if ((precio > dinero) && (edad >= 18)) {
+                alert("Tienes la edad pero no el dinero");
+            }
+
+             else ((precio > dinero) && (edad < 18)) {
+                alert("Ni dinero ni edad");
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
